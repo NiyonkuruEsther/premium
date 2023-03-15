@@ -44,9 +44,9 @@ app.get("/create-table", (req, res) => {
 app.get("/addpost1", (req, res) => {
   let post = [
     { costs: 100, brand: "VOlksWagen", power: 200 },
-    { costs: 100, brand: "VOlksWagen", power: 200 },
-    { costs: 100, brand: "VOlksWagen", power: 200 },
-    { costs: 100, brand: "VOlksWagen", power: 200 },
+    { costs: 50, brand: "Brabus", power: 60 },
+    { costs: 30, brand: "Toyota", power: 40 },
+    { costs: 20, brand: "Corona", power: 12 },
   ];
   let sql = "INSERT INTO users SET ?";
   let query = db.query(sql, post, (err, result) => {
